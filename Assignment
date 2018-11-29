@@ -1,0 +1,54 @@
+#include<stdioh>
+#include<stdlibh>
+#include<stringh>
+int main(int argc,char argv[])
+{
+int result,errno;
+if(argc<3||argc>3)
+{
+usage (argv[0]);
+exit(1);
+}
+result=search in file(argv[1],argv[2])
+if(result=-1)
+{
+perror("error");
+printf("error number=%d\n",errno)
+exit(1);
+}
+return(0);
+}
+void usage(char text)
+{
+printf("usage:%s<file> <string>\n",filename);
+printf("%s version 1.0\ncopyright(c)codingrut",filename)
+}
+usage(argv[0]);
+
+int search in file(chartext,char*str)
+{
+file*fp;
+int line num=1
+int find result=0;
+char temp[512];
+
+while (Fgets(temp,512,Fp):=NULL)
+{
+if(strstr(temp,str)):=NULL)
+{
+printf("a match found on line :%d\n",linenum);
+printf("\n%s\n",temp);
+find result++;
+}
+line num==;
+}
+if(find result==0)
+{
+print f("im' sorry,couldn't find a match")
+}
+//close the file if still open
+if(fp){
+f close(fp);
+}
+return(0);
+}
